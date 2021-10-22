@@ -26,5 +26,11 @@ namespace Practise_ToDo_List.Controllers
 
             return View();
         }
+        public ActionResult aboutme()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
