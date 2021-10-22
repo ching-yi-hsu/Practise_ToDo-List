@@ -32,5 +32,18 @@ namespace Practise_ToDo_List.Controllers
 
             return View();
         }
+        public ActionResult Todolist()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Todolist2()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
     }
 }

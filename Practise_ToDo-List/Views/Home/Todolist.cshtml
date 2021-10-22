@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "To Do List";
+}
+    <div id="todo">
+        <input type="text" placeholder="enter your todo" v-model="inputValue" />
+        <button v-on:click ="addTodo">Add To Do</button>
+        <div>
+            <ul>
+                <li v-for="(todo,index) in todos ">
+                    {{index+1}}
+                    {{todo.text}}
+                    <button v-on:click="removeTodo(index)">Remove To Do</button>
+                </li>
+                
+            </ul>
+        </div>
+        <div>
+            <button v-on:click ="clearAll">Clear All</button>
+        </div>
+        <div v-if="todos.length !=0">
+            Total :{{todos.length}} Iteam to do
+        </div>
+    </div>
+<script src="~/Scripts/vue.js"></script>
+<script src="~/Scripts/todolist.js"></script>
+
